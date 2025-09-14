@@ -20,14 +20,11 @@ body {
     color: #F6F7F9;
     overflow: hidden;
     letter-spacing: 1px;
+    caret-color: transparent;
 }
 
 .app-container {
     padding-top: 20px;
-}
-
-input, textarea {
-    caret-color: transparent;
 }
 
 .page {
