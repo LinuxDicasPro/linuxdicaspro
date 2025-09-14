@@ -26,6 +26,10 @@ body {
     padding-top: 20px;
 }
 
+input, textarea {
+    caret-color: transparent;
+}
+
 .page {
     display: flex;
     flex-direction: column;
@@ -67,7 +71,6 @@ body {
     margin-bottom: -2px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    caret-color: transparent;
 }
 
 .tab-item:hover {
