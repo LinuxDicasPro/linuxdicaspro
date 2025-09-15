@@ -132,7 +132,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    width: 350px;
+    max-width: 350px;
     transition: box-shadow 0.4s ease-in-out;
 }
 
@@ -141,9 +141,17 @@ body {
 }
 
 .card-item-image {
-    width: 350px;
+    width: 100%;
     height: 350px;
+    overflow: hidden;
     object-fit: cover;
+}
+
+.card-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .card-item-content {
@@ -454,13 +462,13 @@ body {
 }
 
 .artigo-card {
-    width: 420px;
+    max-width: 420px;
     background-color: #191e26;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.4s ease;
-    margin-bottom: 15px;
+    margin: 5px 15px 15px;
     cursor: pointer;
 }
 
@@ -642,4 +650,48 @@ body {
 
 .artigo-md a:visited {
     color: #7AE2CF;
+}
+
+@media (max-width: 500px) {
+
+    .artigo-detalhe h1 {
+        font-size: 1.4rem;
+    }
+
+    .artigo-md p,
+    .artigo-md code,
+    .artigo-md pre,
+    .artigo-md ul li,
+    .artigo-md ol li,
+    .artigo-md a {
+        font-size: 0.7rem;
+    }
+
+    .artigo-md a {
+        line-height: 1.2rem;
+    }
+
+    .artigo-md h2 {
+        font-size: 1.1rem;
+    }
+
+    .artigo-md h3 {
+        font-size: 1.1rem;
+    }
+
+    .artigo-md th {
+        font-size: 1rem;
+        padding: 6px 8px;
+    }
+
+    .artigo-md td {
+        font-size: 0.9rem;
+        padding: 6px 8px;
+    }
+
+    .artigo-md table {
+        font-size: 0.9rem;
+        display: block;
+        overflow-x: auto;
+    }
 }
